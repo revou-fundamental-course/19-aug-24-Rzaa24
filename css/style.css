@@ -1,0 +1,170 @@
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.logo {
+    width: 50px;
+}
+
+.header-right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    gap: 10px; /* Spacing between boxes */
+}
+
+.nav-box {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #333; /* Border around each nav item */
+    padding: 5px 20px; /* Reduce height and increase width */
+    background-color: #fff;
+    max-width: 150px; /* Increase width to make them longer */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.welcome-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    margin: 0 auto;
+}
+
+.placeholder-image {
+    width: 100%;
+    max-width: 1366px;
+    height: auto;
+}
+
+/* Facilitation Section */
+.facilitation {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.facilitation-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.facilitation-circles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.facilitation-item {
+    text-align: center;
+    flex: 1;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-form .contact-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form .contact-input,
+.contact-form .contact-radio input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .contact-radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
