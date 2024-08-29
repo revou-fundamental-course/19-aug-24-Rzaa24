@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <div class="header">
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo"> <!-- Placeholder for Logo -->
+        </div>
+        <div class="header-right">
+            <div class="nav-box">
+                <a href="#" class="nav-link">Home</a>
+            </div>
+            <div class="nav-box">
+                <a href="#profile" class="nav-link">Our Profile</a>
+            </div>
+            <div class="nav-box">
+                <a href="#achievement" class="nav-link">Achievement</a>
+            </div>
+            <div class="nav-box">
+                <a href="#contact" class="nav-link">Message Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome">
+        <h1 class="welcome-title">Hi <span id="user-name">Dea</span>, Welcome To Website</h1>
+        <p class="welcome-subtitle">Ini adalah website latihan pertama</p>
+        <div class="welcome-image">
+            <img src="placeholder.png" alt="1366x678" class="placeholder-image">
+        </div>
+    </div>
+
+    <!-- Our Facilitation Section -->
+    <div class="facilitation">
+        <h2 class="facilitation-title">Our Facilitation</h2>
+        <div class="facilitation-circles">
+            <div class="facilitation-item">
+                <div class="circle"></div>
+                <p>Professional Teacher</p>
+            </div>
+            <div class="facilitation-item">
+                <div class="circle"></div>
+                <p>Sport Field</p>
+            </div>
+            <div class="facilitation-item">
+                <div class="circle"></div>
+                <p>Classroom</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Us Section -->
+    <div id="contact" class="contact">
+        <h2 class="contact-title">Message Us</h2>
+        <div class="contact-content">
+            <form id="contact-form" class="contact-form" onsubmit="return validateForm(event)">
+                <label for="name" class="contact-label">Name:</label>
+                <input type="text" id="name" class="contact-input" name="name" required>
+
+                <label for="email" class="contact-label">Email:</label>
+                <input type="email" id="email" class="contact-input" name="email" required>
+
+                <label for="birthdate" class="contact-label">Tanggal Lahir:</label>
+                <input type="date" id="birthdate" class="contact-input" name="birthdate" required>
+
+                <label class="contact-label">Jenis Kelamin:</label>
+                <div class="contact-radio">
+                    <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" required>
+                    <label for="female">Perempuan</label>
+                </div>
+
+                <label for="phone" class="contact-label">Phone:</label>
+                <input type="tel" id="phone" class="contact-input" name="phone" required>
+
+                <button type="submit" class="contact-button">Submit</button>
+            </form>
+
+            <div class="contact-info">
+                <p>Current time: <span id="current-time"></span></p>
+                <p>Name: <span id="submitted-name"></span></p>
+                <p>Tanggal Lahir: <span id="submitted-birthdate"></span></p>
+                <p>Jenis Kelamin: <span id="submitted-gender"></span></p>
+                <p>Phone: <span id="submitted-phone"></span></p>
+                <p>Pesan: Lihat Bagian Lain Website</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created By Dea</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
